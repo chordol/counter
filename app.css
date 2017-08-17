@@ -1,7 +1,19 @@
-.count {
+.countvoncount {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.count {
+    position: absolute;
+    right: 570px;
+    bottom: 370px;
+    transition: all 1s ease;
+    transform: scale(0);
+}
+
+.count.increment {
+    transform: scale(2);
 }
 
 .incrementButton {

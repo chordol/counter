@@ -3,7 +3,7 @@ import createReactClass from 'create-react-class'
 import { connect, Provider } from 'react-redux'
 import { actions } from './redux.js'
 
-let ReactButton = createReactClass({
+let CountBy = createReactClass({
     render: function() {
         return (
             <div>
@@ -14,7 +14,7 @@ let ReactButton = createReactClass({
     },
 
     onClick: function() {
-        this.props.onReactButtonClick(parseInt(this.refs.val.value));
+        this.props.onCountByButtonClick(parseInt(this.refs.val.value));
     }
 });
 
@@ -23,23 +23,23 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        onReactButtonClick: (value) => {
+        onCountByButtonClick: (value) => {
             dispatch(actions.increment(value));
         }
     }
 }
 
-const ReactButtonContainer = connect(
+const CountByContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(ReactButton)
+)(CountBy)
 
 let App = createReactClass({
     render: function() {
         return (
             <Provider store={this.props.store}>
-                <ReactButtonContainer>
-                </ReactButtonContainer>
+                <CountByContainer>
+                </CountByContainer>
             </Provider>
         );
     }

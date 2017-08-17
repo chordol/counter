@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore } from 'redux';
 import _ from 'lodash';
 
 const INCREMENT = 'INCREMENT';
