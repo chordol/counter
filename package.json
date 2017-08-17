@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "./node_modules/http-server/bin/http-server -c-1 -P http://localhost:8081",
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "serve": "./node_modules/http-server/bin/http-server -c-1 -p 8080 -P http://localhost:8081",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 8081",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sasha Dzeletovic",
