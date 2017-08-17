@@ -1,0 +1,22 @@
+.count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.incrementButton {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.incrementInput {
+    font-size: 40px;
+    width: 100px;
+    padding: 18px 10px;
+}
+
+.counter {
+    font-family: system-ui;
+    font-size: 40px;
+    padding: 20px;
+}
